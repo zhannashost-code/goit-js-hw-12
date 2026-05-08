@@ -75,6 +75,7 @@ async function handleSubmit(event) {
 async function handleLoadMore() {
   page += 1;
 
+  hideLoadMoreButton();
   showLoader();
 
   try {
@@ -90,7 +91,8 @@ async function handleLoadMore() {
       iziToast.info({
         message:
           "We're sorry, but you've reached the end of search results.",
-      });
+      }); } else {
+      showLoadMoreButton();
     }
 
     scrollPage();
