@@ -48,6 +48,11 @@ body {
   text-align: center;
 }
 
+button.search {
+  background-color: #4e75ff;
+  border-radius: 8px;
+}
+
 .load-more {
   display: none;
 
